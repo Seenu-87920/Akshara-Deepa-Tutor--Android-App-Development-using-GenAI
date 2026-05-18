@@ -1,0 +1,6 @@
+{
+  "name": "Akshara-Deepa Tutor",
+  "description": "AI Assisted Learning App for SSLC Students with Syllabus Tracking, Quizzes, and Gemini AI Tutor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
