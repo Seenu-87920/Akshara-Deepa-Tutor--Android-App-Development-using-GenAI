@@ -17,21 +17,38 @@
     @apply bg-white/70 backdrop-blur-md border border-slate-200 shadow-sm;
   }
   
-  .card-high-density {
-    @apply bg-white rounded-2xl shadow-sm border border-slate-200 transition-all duration-200;
+  .card-premium {
+    @apply bg-white rounded-[28px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300;
   }
 
-  .btn-primary {
-    @apply bg-indigo-600 text-white rounded-xl px-6 py-3 font-bold hover:bg-indigo-700 transition-all active:scale-95 shadow-lg shadow-indigo-200 disabled:opacity-50;
+  .btn-modern {
+    @apply bg-indigo-600 text-white rounded-2xl px-6 py-4 font-bold hover:bg-indigo-700 transition-all active:scale-[0.98] shadow-lg shadow-indigo-100 disabled:opacity-50;
   }
 
-  .btn-secondary {
-    @apply bg-white text-slate-600 border border-slate-200 rounded-xl px-6 py-3 font-bold hover:bg-slate-50 transition-all;
+  .btn-modern-secondary {
+    @apply bg-slate-100 text-slate-700 rounded-2xl px-6 py-4 font-bold hover:bg-slate-200 transition-all active:scale-[0.98];
   }
 
   .label-tiny {
     @apply text-[10px] uppercase font-bold tracking-widest text-slate-400;
   }
+
+  .stat-badge {
+    @apply bg-slate-100 px-3 py-1.5 rounded-full flex items-center gap-2 text-xs font-bold text-slate-600;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
 }
 
 .markdown-body {

@@ -1,3 +1,26 @@
+export interface Badge {
+  id: string;
+  name: string;
+  icon: string;
+  description: string;
+  unlocked: boolean;
+}
+
+export interface UserStats {
+  xp: number;
+  level: number;
+  streak: number;
+  lastActive: string;
+  badges: Badge[];
+}
+
+export interface LeaderboardEntry {
+  rank: number;
+  name: string;
+  xp: number;
+  isCurrentUser?: boolean;
+}
+
 export interface Chapter {
   id: string;
   title: string;
